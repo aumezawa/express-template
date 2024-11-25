@@ -1,0 +1,41 @@
+{
+  "name": "express-template",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "tsc",
+    "debug": "npm run build && cross-env LOGLEVEL=debug LOGOUT=console node ./dist/index.js",
+    "start": "node ./dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aumezawa/express-template.git"
+  },
+  "author": "aumezawa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aumezawa/express-template/issues"
+  },
+  "homepage": "https://github.com/aumezawa/express-template#readme",
+  "dependencies": {
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "express": "^4.21.1",
+    "helmet": "^8.0.0",
+    "hpp": "^0.2.3",
+    "jsonwebtoken": "^9.0.2",
+    "log4js": "^6.9.1"
+  },
+  "devDependencies": {
+    "@types/cookie-parser": "^1.4.7",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/helmet": "^0.0.48",
+    "@types/hpp": "^0.2.6",
+    "@types/jsonwebtoken": "^9.0.7",
+    "@types/log4js": "^0.0.33",
+    "@types/node": "^22.9.3",
+    "cross-env": "^7.0.3",
+    "typescript": "^5.7.2"
+  }
+}

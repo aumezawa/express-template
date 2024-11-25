@@ -1,0 +1,35 @@
+// Reference: https://www.typescriptlang.org/tsconfig/
+// Order of parameters: https://github.com/Microsoft/TypeScript/blob/main/src/compiler/commandLineParser.ts
+{
+  "compilerOptions": {
+    // Basic
+    "target": "ES5",
+    "module": "CommonJS",
+    "lib": ["ES2023"],
+    "allowJs": true,
+    "outDir": "./dist",
+    "isolatedModules": true,
+
+    // Strict Type Checks
+    "strict": true,
+
+    // Additional Checks
+
+    // Module Resolution
+    "moduleResolution": "node10",
+    "typeRoots": ["./src/types/*"],
+    "esModuleInterop": true,
+
+    // Source Maps
+
+    // Experimental
+
+    // Advanced
+    "resolveJsonModule": true,
+
+    // Common
+    "incremental": false,
+  },
+  "include": ["./src/**/*"],
+  "exclude": ["node_modules"],
+}
